@@ -1,7 +1,7 @@
 /* A tag body afeta TODO o conteúdo do site */
 body {
     /* Inserir imagem de fundo */
-    background-image: url(https://bit.ly/3g7ht7X
+    background-image: url(https://bit.ly/2RJiiur
     );
     /* Repetir ou não o fundo */
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@ body {
     /* Mudar altura do body */
     height: 100vh;
     /* Mudar tamanho da imagem */
-    background-size: 500px;
+    background-size: 100%;
     /* Mudar cor de fundo */
     background-color: black;
     /* Fixar a imagem de fundo */
