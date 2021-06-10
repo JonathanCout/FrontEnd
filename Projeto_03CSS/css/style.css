@@ -1,0 +1,42 @@
+/* A tag body afeta TODO o conteúdo do site */
+body {
+    /* Inserir imagem de fundo */
+    background-image: url(https://bit.ly/3g7ht7X
+    );
+    /* Repetir ou não o fundo */
+    background-repeat: no-repeat;
+    /* Alinhar o testo em alguma posição */
+    text-align: center;
+    /* Posicionar o body em relação à página */
+    background-position-x: center;
+    /* Mudar altura do body */
+    height: 100vh;
+    /* Mudar tamanho da imagem */
+    background-size: 500px;
+    /* Mudar cor de fundo */
+    background-color: black;
+    /* Fixar a imagem de fundo */
+    background-attachment: fixed;
+}
+
+/* Personalizando títulos */
+h1 {
+    color:#FF0000;
+    font-family: sans-serif;
+}
+
+/* Personalizando subtitulos */
+
+/* O # é o símbolo para chamar um id no CSS */
+#green {
+    color:#00FF00;
+}
+#blue {
+    color:#00FF;
+}
+
+/* O . serve para chamar uma classe no CSS */
+.colors {
+    color:mediumpurple;
+    font-size: 24px;
+}
