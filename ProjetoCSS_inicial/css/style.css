@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+TC:wght@300&display=swap');
+
+html * {
+    margin: 0;
+}
+/* A tag body afeta TODO o conteúdo do site */
+body {
+    height: 100vh;
+    background-color: rgb(238, 221, 122);
+    
+}
+/* Parte inicial do site */
+#cabecalho {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: block;    
+}
+/* Logo com nome */
+#nomePrinc {
+    font-family: 'Lobster', cursive;
+    color: blueviolet;
+    text-decoration: underline;
+    font-size: 40px;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 10vh;
+}
+#subtitulo {
+    margin-top: 2px;
+    text-align: left;
+    margin-left: 130px;
+    font-style: italic;
+    
+}
+/* Listas do nav */
+ul {
+    list-style: none;
+    
+}
+#caminhos ul {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;  
+    text-align: right; 
+}
+#caminhos ul li {
+    border: rgb(82, 82, 82) 2px solid;
+    border-radius: 15%;
+    padding: 7px;
+    display: inline-block;
+    margin-right: 12px;
+    
+}
+#caminhos ul li a{
+   text-decoration: none;
+   color: rgb(8, 5, 2);
+}
+#caminhos li:hover {
+    background-color: purple;
+}
+#caminhos ul li:hover ul{
+    display: block;
+    
+}
+#caminhos ul li ul {
+    position: absolute;
+    display: none;
+    margin: 7px;
+    right: 260px;
+    
+}
+
+#caminhos ul li ul li {
+    display: block;  
+}
+
+/* Texto descritivo e imagem */
+#conteudo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20vh;
+    margin-bottom: 20px;
+}
+section {
+    display: block;
+}
+#grid1 {
+    margin-left: 5vh;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+#titulogrid {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+   
+}
+.descricao {
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 25px;
+    
+}
+#img1 {  
+    max-height:630px;
+    max-width: 800px;
+ 
+}
+/* Parte final com outros links, ícones de redes sociais, etc. */
+#rodape {
+    height: 40vh;
+    margin-left: 10vh;
+    margin-top: 30px;
+}
+
+#redes ul{
+    margin: 0;
+    padding: 0;
+}
+#redes ul li{
+    display: inline-block;
+}
+.icones {
+    height: 40px;
+    margin-right: 7px;
+}
+
+
+
+
