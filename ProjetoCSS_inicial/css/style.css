@@ -5,7 +5,7 @@ html * {
 }
 /* A tag body afeta TODO o conteúdo do site */
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(238, 221, 122);
     
 }

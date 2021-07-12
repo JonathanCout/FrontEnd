@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- A tag form inicia um formulário e recebe 2 atributos action e method. -->
+        <form id="form" action="./data/" method="POST">
+            <!-- A label é responsáve pelo nome do imput que vá aparecer na tela. O for relaciona com o id do input -->
+            <!-- O input é responsáve pela caixinha onde o usuário vai preencher -->
+            <label for="nome">Nome:</label>
+            <input type="text" name = "nome" id = "nome">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name ="email" id = "email">
+            <br>
+            <label for="sugestoes">Deixe sua sugestão:</label>
+            <br>
+            <textarea name="sugestoes" id="sugestoes" cols="30" rows="10"></textarea>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
