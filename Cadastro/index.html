@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Just Chilling - Cadastro!</title>
+    <link rel="shortcut icon" href="https://bit.ly/35rwWtg">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#">
+                <h1>Just Chilling</h1>
+                <em>Manga Cafe</em>
+            </a>
+        </div>
+    </header>
+    <main>
+        <!-- Início do formulário -->
+        <div id="form">
+            <form action="#">
+                <fieldset>
+                    <h2>Faça seu cadastro</h2>
+                    <!-- Inputs de nome, nome completo, email, senha e confirmação -->
+                    <div class="userInput">
+                        <label for="nome">Nome de usuário</label>
+                        <input type="text" name="nome" id="nome" required>
+                        <!-- Caixa de texto para regra usuário -->
+                        <div class="rules">
+                            <p>O nome de usuário deve conter até 20 caracteres. Símbolos como -, _ e / são permitidos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="userInput">
+                        <label for="nomeCompleto">Digite seu nome completo</label>
+                        <input type="text" name="nomeCompleto" id="nomeCompleto" required>
+                    </div>
+                    <div class="userInput">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <!-- Caixa de texto para regra email -->
+                        <div class="rules">
+                            <p>Inserir um email válido. Ex: email@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="userInput">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" required>
+                        <div class="rules">
+                            <!-- Caixa de texto para regra senha -->
+                            <p>Insira uma senha de 8 a 20 dígitos contendo pelo menos uma letra maiúscula, uma minúscula
+                                e um caracter especial</p>
+                        </div>
+                    </div>
+                    <div class="userInput">
+                        <label for="password2">Confirme sua senha</label>
+                        <input type="password" name="password2" id="password2" required>
+                    </div>
+                    <div id="term">
+                        <input type="checkbox" name="termos" id="termos" required>
+                        <label for="termos">Estou de acordo com os Termos e Condições</label>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit">Fazer Cadastro</button>
+                        <button type="reset">Cancelar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway&family=Roboto+Slab&display=swap');
+html * {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-image: url('../image/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Logo da página */
+#logo {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 7rem;
+    color: azure;
+}
+h1 {
+    font-size: 4rem;
+    
+    font-family: 'Roboto Slab', serif;
+}
+em {
+    font-size: 2rem;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#logo:hover {
+    animation: grow 2s infinite
+}
+
+/* Início do formulário */
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: 2s cubic-bezier(.07,1.02,.54,1) forwards;
+}
+fieldset {
+   width: 30vw;
+   text-align: left;
+   margin-top: 5vh;
+   background-color: rgba(233, 236, 44, 0.911);
+   border-radius: 15px;
+   padding: 3rem;
+}
+/* Texto inicial */
+h2 {
+    font-size: 2.3rem;
+    font-family: 'Bona Nova', serif;
+}
+/* Label e input */
+.userInput {
+    position: relative;
+}
+.userInput label {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    font-size: 1.6rem;
+    margin: 1.6rem 0 0.7rem 0;
+}
+.userInput input {
+    border: 1px solid #00000000;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0.6rem 0 -0.2rem rgb(0 0 0 / 23%)
+
+}
+.userInput input:hover {
+    border: 1.2px rgb(101, 102, 89) solid;
+}
+
+.userInput input:focus {
+    transform: scale(1.06);
+    border: 2px rgb(223, 156, 41) solid;
+}
+/* Termos e Serviços */
+#term {
+    font-family: 'Raleway', sans-serif;
+    margin: 4vh 0;
+    font-size: 1.2rem;
+}
+/* Caixas de regras para os textos */
+.rules {
+    width: 20vw;
+    padding: 1.5rem;
+    display: none;
+    position: absolute;
+    left: calc(100% + 4rem);
+    bottom: 50%;
+    transform: translateY(60%);
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+    border: 2px white solid;
+    text-align: left;
+    background-color: rgb(255, 238, 255);
+    border-radius: 20px;
+    animation: mainAnimation 1s;
+
+}
+input:focus + .rules {
+    display: block;
+}
+/* Botôes de finalização */
+.buttons {
+    display: flex;
+    gap: 2rem;
+}
+button {
+    font-family: 'Raleway', sans-serif;
+    padding: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Bona Nova', serif;
+    font-size: 1.1rem;
+    background-color: rgb(212, 154, 28);
+    border: 2px solid #00000000;
+    border-radius: 30px;
+    box-shadow: .3rem 0.5rem 0 -0.2rem rgb(0 0 0 / 23%) ;
+    transition: 200ms ease-in;
+}
+button:hover {
+   filter: contrast(1.3);
+}
+button:focus {
+   background-color: rgb(157, 223, 201);
+}
+/* Animação das caixas de regras */
+@keyframes mainAnimation {
+    from { 
+        transform:translateX(60%); opacity: 30%;      
+    }   
+}
+/* Animação título */
+@keyframes grow {
+    from {
+        transform: scale(1) skew(0)
+    }
+    to {
+        transform: scale(1.015) skew(-7deg) 
+    }
+}
