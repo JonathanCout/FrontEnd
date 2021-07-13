@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway&family=Roboto+Slab&display=swap');
 html * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
